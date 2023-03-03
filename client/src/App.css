@@ -1,38 +1,143 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+.main-background {
+  background-color: #e5dbe3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23ac929b' fill-opacity='0.47' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+
+}
+
+/* progress {
+  vertical-align: baseline;
+} */
+
+/* <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="897px" height="452px" viewBox="0 0 897 452" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>IPAD 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="IPAD" sketch:type="MSLayerGroup" transform="translate(681.000000, 55.000000)" stroke="#7E89A3">
+            <path d="M202.986,317 L12.097,317 C5.462,317 0.083,311.623 0.083,304.99 L0.083,12.093 C0.083,5.46 5.461,0.083 12.097,0.083 L202.986,0.083 C209.622,0.083 215,5.46 215,12.093 L215,304.99 C215,311.623 209.622,317 202.986,317 Z" id="bezel" stroke-width="2" fill="#FDFDFD" sketch:type="MSShapeGroup"></path>
+            <path d="M202.986,317 L12.097,317 C5.462,317 0.083,311.623 0.083,304.99 L0.083,12.093 C0.083,5.46 5.461,0.083 12.097,0.083 L202.986,0.083 C209.622,0.083 215,5.46 215,12.093 L215,304.99 C215,311.623 209.622,317 202.986,317 Z" id="bezel-2" stroke-width="2" fill="#FDFDFD" sketch:type="MSShapeGroup"></path>
+            <rect id="screen" fill="#FFFFFF" sketch:type="MSShapeGroup" x="17" y="32" width="181.999" height="252.917"></rect>
+            <circle id="lock" sketch:type="MSShapeGroup" cx="108.021" cy="300.021" r="8.021"></circle>
+            <circle id="camera" sketch:type="MSShapeGroup" cx="106.99" cy="16.99" r="2.99"></circle>
+        </g>
+        <g id="Laptop" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)" stroke="#8492A5">
+            <path d="M594,0 L98,0 C84.50415,0 73,11.0738184 73,24.7901127 L73,351.027995 L619,351.027985 L619,24.7901127 C618.999971,11.0728209 607.537479,0 594,0 Z" id="bezel" stroke-width="2" fill="#FEFEFE" sketch:type="MSShapeGroup"></path>
+            <circle id="webcam" stroke-width="2" sketch:type="MSShapeGroup" cx="347" cy="19" r="4"></circle>
+            <g id="bottom" transform="translate(0.000000, 351.000000)" sketch:type="MSShapeGroup">
+                <path d="M640.812,31.01 L51.288,31.01 C20.641,31.01 0,20.494 0,16.022 L0,2.428 C0,1.084 1.335,0 2.995,0 L689.104,0 C690.766,0 692.103,1.084 692.103,2.428 L692.103,16.557 C692.096,20.092 676.112,31.01 640.812,31.01 Z" id="Shape" stroke-width="2" fill="#FDFDFD"></path>
+                <path d="M0.5,14.5 L690.242676,14.5" id="Line" stroke-linecap="square"></path>
+            </g>
+            <rect id="screen" fill="#FFFFFF" sketch:type="MSShapeGroup" x="95" y="39" width="501.073853" height="292.009"></rect>
+            <path d="M421,352 L421,355.087 C421,357.288 416.666719,357.952714 413.386719,357.952714 L278.815286,357.952714 C275.364286,357.952714 271,357.289 271,355.087 L271,352" id="touchpad" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+        <g id="iphone" sketch:type="MSLayerGroup" transform="translate(576.000000, 177.000000)" stroke="#7E89A3">
+            <path d="M130,257.964 C130,266.797 122.809,273.956 113.938,273.956 L16.063,273.956 C7.192,273.956 0.001,266.797 0.001,257.964 L0.001,16.073 C0.001,7.24 7.192,0.081 16.063,0.081 L113.938,0.081 C122.809,0.081 130,7.24 130,16.073 L130,257.964 L130,257.964 Z" id="bezel" stroke-width="2" fill="#FDFDFD" sketch:type="MSShapeGroup"></path>
+            <rect id="screen" fill="#FFFFFF" sketch:type="MSShapeGroup" x="9" y="36" width="111.93" height="199.084"></rect>
+            <path d="M77,25.746 C77,26.381 76.561,26.893 76.02,26.893 L55.918,26.893 C55.376,26.893 54.938,26.38 54.938,25.746 L54.938,23.166 C54.938,22.531 55.377,22.019 55.918,22.019 L76.02,22.019 C76.561,22.019 77,22.532 77,23.166 L77,25.746 L77,25.746 Z" id="speaker" sketch:type="MSShapeGroup"></path>
+            <circle id="camera" sketch:type="MSShapeGroup" cx="66" cy="12" r="3"></circle>
+            <ellipse id="lock" sketch:type="MSShapeGroup" cx="65.04" cy="254.001" rx="10.04" ry="10.001"></ellipse>
+        </g>
+    </g>
+</svg> */
+
+
+/* .foot {
+  margin: 30px;
   text-align: center;
-}
+  position: sticky;
+  bottom: 0;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* 
+  .container{
+    margin:80px auto;
+    width: 60px;
+    height: 60px;
+    position:relative;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  } */
+/*   
+  .flame{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(1.5,1.5);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .yellow{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:gold;
+    box-shadow: 0px 0px 9px 4px gold;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .orange{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:orange;
+    box-shadow: 0px 0px 9px 4px orange;
   }
-}
+  
+  .red{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:OrangeRed;
+    box-shadow: 0px 0px 5px 4px OrangeRed;
+  }
+  
+  .white{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px white;
+  }
+  
+  .circle{
+    border-radius: 50%;
+    position:absolute;  
+  }
+  
+  .blue{
+    width: 10px;
+    height: 10px;
+    left:25px;
+    bottom:-25px; 
+    background: SlateBlue;
+    box-shadow: 0px 0px 15px 10px SlateBlue;
+  }
+  
+  .black{
+    width: 40px;
+    height: 40px;
+    left:10px;
+    bottom:-60px;  
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  } */
+  
+  /* @keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+  } */
+
