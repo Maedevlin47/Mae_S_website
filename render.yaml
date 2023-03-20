@@ -1,11 +1,11 @@
 databases:
-  - name: MaeSchreckWebsite
-    databaseName: MaeSchreckWebsite
-    user: MaeSchreckWebsite
+  - name: maeschreck
+    databaseName: maeschreck
+    user: maeschreck
 
 services:
   - type: web
-    name: MaeSchreckWebsite
+    name: maeschreck
     env: ruby
     repo: https://github.com/Maedevlin47/Mae_S_website.git
     buildCommand: "./bin/render-build.sh"
@@ -13,7 +13,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: MaeSchreckWebsite
+          name: maeschreck
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
