@@ -1,5 +1,5 @@
 import React from 'react';
-import SCvideoRec from "./SCvideoRec.video.mp4";
+import SCRec from "./SCRec.video.mp4";
 import 'tailwindcss/tailwind.css';
 
 
@@ -13,7 +13,7 @@ function VideoPlayer() {
                             <video 
                                 className="absolute inset-0 w-1/3 h-2/4 object-contain mx-auto rounded-2xl"
                                 controls autoplay loop
-                                    src={SCvideoRec} 
+                                    src={SCRec} 
                                     type="video/mp4"
                                     style={{ left: "150px", right:"160px",  top: "115px"}}>                            
                             </video>
