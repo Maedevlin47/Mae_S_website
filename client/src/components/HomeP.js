@@ -20,10 +20,3 @@ return (
 
 export default HomeP;
 
-{/* <div class="container"></div>
-<div class="red flame"></div>
-<div class="orange flame"></div>
-<div class="yellow flame"></div>
-<div class="white flame"></div>
-<div class="blue circle"></div>
-<div class="black circle"></div> */}
