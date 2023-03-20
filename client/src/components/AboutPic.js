@@ -6,9 +6,9 @@ import 'tailwindcss/tailwind.css';
 
 function AboutPic() {
     return (
-    <div class="mx-auto items-right pl-72 pt-32 pb-32">
-    <div class=" mb-10 items-right">
-        <img class = "h-1/4 pr-48 w-2/3 scale-150" src ={AboutCPic} alt="matchbox"/>
+    <div class="mx-auto">
+    <div class="mb-10 items-right">
+        <img class = "mt-28 h-2/3 w-max scale-150" src ={AboutCPic} alt="matchbox"/>
     </div>
     </div>
     )

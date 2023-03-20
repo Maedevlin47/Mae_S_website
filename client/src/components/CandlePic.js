@@ -13,4 +13,4 @@ function CandlePic () {
 
 }
 
-export default CandlePic
+export default CandlePic;

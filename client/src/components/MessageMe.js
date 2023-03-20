@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MessageMePic from './MessageMePic';
 
 
 function MessageMe () {
@@ -51,13 +52,15 @@ function MessageMe () {
 
     
     return (
-        <div className="pl-60 pr-32 w-full h-full">
+        <div className="main-background text-color pl-60 pr-32 w-full h-full mt-24">
+                    <MessageMePic class=""/>
+            <div className="flex justify-right pb-12 text-4xl font-bold pt-.5 animate-bounce">Can't wait to connect!</div>
             <form onSubmit={handleSubmit}>
                 <div class="flex flex-wrap -mx-3">
-                    <div class="w-full md:w-1/3 px-3 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-s font-bold mb-2" for="grid-full-name">
+                    <div class="w-full md:w-1/3 md:mb-0">
+                        <label className="block uppercase tracking-wide text-xl font-bold mb-2" for="grid-full-name">
                             Full Name:
-                            <input className="appearance-none block w-full bg-stone-50 text-gray-900 border border-amber-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="Bob Smith"
+                            <input className="appearance-none block w-full text-gray-900 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-slate-300 focus:bg-slate-100 focus:border-gray-500" id="grid-first-name" type="text" placeholder="Bob Smith..."
                                 name="full_name"
                                 value={fullName}
                                 onChange={handleChange}
@@ -68,10 +71,10 @@ function MessageMe () {
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full md:w-1/3 px-3 md:mb-0">
-                        <label className="block uppercase tracking-wide text-gray-700 text-s font-bold mb-2" for="grid-email">
+                        <label className="block uppercase tracking-wide text-xl font-bold mb-2" for="grid-email">
                             Email:
                         {/* </label> */}
-                            <input className="appearance-none block w-full bg-stone-50 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email"
+                            <input className="appearance-none block w-full text-gray-900 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-slate-300 focus:bg-slate-100 focus:border-gray-500" id="email" type="email"
                                 name="email"
                                 value={email}
                                 onChange={handleChange}
@@ -82,9 +85,9 @@ function MessageMe () {
                     </div>
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
-                        <label className="block uppercase tracking-wide text-gray-700 text-s font-bold mb-2" for="grid-message">
+                        <label className="block uppercase tracking-wide text-xl text-s font-bold mb-2" for="grid-message">
                             Message:
-                        <input className="no-resize appearance-none block w-full bg-stone-50 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" type="message"
+                        <input className="no-resize appearance-none block w-full border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-slate-300 focus:bg-slate-100 focus:border-gray-500 h-48 resize-none" id="message" type="message"
                                 name="message"
                                 value={message}
                                 onChange={handleChange}
@@ -95,7 +98,7 @@ function MessageMe () {
                 <br />
                 <div className="md:flex md:items-center">
                     <div className="md:w-1/3">
-                        <button className="shadow bg-amber-600 hover:bg-amber-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" 
+                        <button className="shadow bg-slate-400 hover:bg-red-300 focus:shadow-outline focus:outline-none text-2xl font-bold py-2 px-4 rounded" 
                             type="submit">
                             Send
                         </button>
@@ -103,6 +106,7 @@ function MessageMe () {
                     <div className="md:w-2/3"></div>
                 </div>
             </form>
+            <MessageMePic class=""/>
         </div>
         );
     }

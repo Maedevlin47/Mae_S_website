@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import './App.css';
 import NavBar from "./components/NavBar";
 import 'tailwindcss/tailwind.css';
-import MatchesPic from "./components/MatchesPic";
+// import MatchesPic from "./components/MatchesPic";
 import ProjectContainer from './components/ProjectContainer';
 import Resume from "./components/Resume";
 import MessageMe from "./components/MessageMe";
@@ -23,31 +23,33 @@ function App() {
   
   
   return (
-    <body className="main-background">
+    <body className="main-background text-color">
       <div className="w-screen flex flex-col h-screen justify-between">
           <NavBar/>
           {location.pathname === '/' ? (
 
-        <header className= "pt-20 font-bold text-center font-['Quicksand'] text-4xl pt-.5 text-red-800">
+        <header className= "pt-20 text-center text-4xl text-2xl uppercase font-bold leading-snug">
+            <div className="animate-bounce"> 
               Mae Schreck
+            </div>
               <br/>
-          <div className="text-center font-['Quicksand'] font-bold text-3xl pt-.5 text-red-800 pt-10">
+          <div className="text-center text-3xl pt-.5">
               Full Stack Software Engineer
               <HomeP className=""/>
           </div>
         </header>
                 ): null}
           <div>
-            <Routes className ="">
+            <Routes>
                 <Route exact path = "/projectcontainer" element={<ProjectContainer/>} />
                 <Route exact path = "/resume" element={<Resume/>} />
                 <Route exact path = "/messageme" element={<MessageMe/>} />
                 <Route exact path = "/about" element={<About/>} />
             </Routes>
           </div>
-          <Home/>
+            <Home/>
+            <Footer/>
       </div>
-      <Footer/>
     </body>
     );
   }
