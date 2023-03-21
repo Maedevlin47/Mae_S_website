@@ -37,3 +37,6 @@ module MaeSWebsite
     config.api_only = true
   end
 end
+
+config_file = File.join(Rails.root, 'config', 'config.yml')
+config = YAML.load(ERB.new(File.read(config_file)).result)[Rails.env]

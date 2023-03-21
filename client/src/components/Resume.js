@@ -143,10 +143,8 @@ import ResumeShow from "./ResumeShow";
 // const resumeUrl = './MaeSchreckResume.jpeg';
 
 
-{/* <image title="Resume" src="client/components/MaeSchreckResume2023.pdf"/> */}
 
 
-{/* <iframe title = "Mae Schreck Resume" src="client/src/components/MaeSchreckResume2023.pdf" width="100%" height="600" className="pdf-iframe" id="pdf-iframe"></iframe> */}
 
 // import { Document, Page } from 'react-pdf';
 
