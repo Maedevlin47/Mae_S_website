@@ -172,7 +172,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.13)
   bcrypt (~> 3.1.7)
   debug
-  pg (~> 0.18)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4)
   spring

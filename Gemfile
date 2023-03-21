@@ -32,6 +32,8 @@ group :development do
   gem "spring"
 end
 
-gem 'pg', '~> 0.18'
+# gem 'pg', '~> 0.18'
+gem 'pg'
+
 
 gem "active_model_serializers", "~> 0.10.13"
